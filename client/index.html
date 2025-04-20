@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Abhijit Dengale - AI Agent & Full-Stack Developer</title>
+    <meta name="description" content="Professional portfolio of Abhijit Dengale, showcasing expertise in AI Agent Development and Full-Stack Development." />
+    <!-- Redirect handling for direct access to root -->
+    <script>
+      // Check if we're at the root path
+      if (window.location.pathname === '/' || window.location.pathname === '') {
+        // Redirect to the static version
+        window.location.href = '/static';
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/entrypoint.tsx"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>
