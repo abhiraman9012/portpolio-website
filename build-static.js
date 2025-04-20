@@ -6,19 +6,10 @@ import { execSync } from 'child_process';
 
 console.log('🚀 Building static version of the portfolio site for Vercel deployment...\n');
 
-// 1. Create a temporary index.html that uses the static entry point
-const clientDir = path.join(process.cwd(), 'client');
-const indexPath = path.join(clientDir, 'index.html');
-const originalIndex = fs.readFileSync(indexPath, 'utf-8');
-
-// Update index.html to use static.tsx as entry point instead of main.tsx
-const staticIndex = originalIndex.replace(
-  'src="/src/main.tsx"',
-  'src="/src/static.tsx"'
-);
-
-console.log('📝 Updating index.html to use static version...');
-fs.writeFileSync(indexPath, staticIndex);
+// 1. Create a temporary .env.production to force static mode 
+const envFilePath = path.join(process.cwd(), '.env.production');
+console.log('📝 Creating production environment config...');
+fs.writeFileSync(envFilePath, 'VITE_USE_STATIC=true\n');
 
 try {
   // 2. Build the project
@@ -27,10 +18,32 @@ try {
 
   // 3. Copy vercel.json to the dist directory
   console.log('\n📋 Copying Vercel configuration to dist directory...');
+  const clientDir = path.join(process.cwd(), 'client');
   const clientVercelPath = path.join(clientDir, 'vercel.json');
   const distVercelPath = path.join(process.cwd(), 'dist', 'vercel.json');
   
   fs.copyFileSync(clientVercelPath, distVercelPath);
+  
+  // 4. Create a simple 404.html that redirects to index.html (for SPA routing)
+  const notFoundContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Redirects all 404s to the index page for client-side routing
+    window.location.href = "/";
+  </script>
+</head>
+<body>
+  <p>Redirecting to home page...</p>
+</body>
+</html>`;
+
+  const notFoundPath = path.join(process.cwd(), 'dist', '404.html');
+  fs.writeFileSync(notFoundPath, notFoundContent);
   
   console.log('\n✅ Static build completed successfully!');
   console.log('The "dist" directory now contains a static version of the portfolio');
@@ -41,11 +54,13 @@ try {
   console.log('2. Import the GitHub repository');
   console.log('3. Set the following settings:');
   console.log('   - Framework Preset: Other');
-  console.log('   - Build Command: none (leave empty)');
+  console.log('   - Build Command: node build-static.js');
   console.log('   - Output Directory: dist');
   console.log('4. Click "Deploy"\n');
 } finally {
-  // 4. Restore the original index.html
-  console.log('🔄 Restoring original index.html...');
-  fs.writeFileSync(indexPath, originalIndex);
+  // 5. Remove the temporary .env.production file
+  console.log('🔄 Cleaning up temporary files...');
+  if (fs.existsSync(envFilePath)) {
+    fs.unlinkSync(envFilePath);
+  }
 }
