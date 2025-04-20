@@ -1,0 +1,59 @@
+Abhijit Dengale
+Email: abhijitdengale2003@gmail.com | Phone: +91 9370162316 | LinkedIn:
+www.linkedin.com/in/abhijitdengale | Website: abhijit01.netlify.app
+Summary
+As an AI Agent Developer and Full-Stack Developer, I specialize in machine learning, AI automation,
+and advanced algorithms to create scalable and intelligent systems. My expertise spans from AI-driven
+applications to full-stack web development and cloud-based solutions. Leading ZyraTech, I’ve
+successfully delivered AI-powered tools that increased customer engagement and streamlined
+operations, while my role as a Project Manager involved optimizing workflows for high-stakes fintech
+projects. I am passionate about developing solutions that can learn, adapt, and grow, making me an
+ideal candidate for AI agent development roles.
+Experience
+ZyraTech | CEO
+September 2024 – Present | India
+• Spearheaded the development and deployment of 10+ AI-driven web applications, increasing client
+acquisition by 40% and revenue by 20%. • Launched AI-powered tools that improved customer
+engagement by 40%, driving a 25% increase in monthly active users. • Successfully led a team of 11+
+to develop innovative products in AI courses, audiobook sales, and career assistance programs. • Key
+Skills: AI Automation, Machine Learning, Web Development, Team Leadership, Cloud Solutions
+Money Forward | Project Manager
+April 2024 – October 2024 | Tokyo, Japan
+• Led a cross-functional team of 15+ developers and analysts to deliver 8 fintech projects worth over
+$2M. • Enhanced project delivery efficiency by 20%, reducing timelines by 3 weeks on average. •
+Implemented Agile methodologies, optimizing resource management and collaboration. • Key Skills:
+Agile Project Management, Machine Learning Integration, Team Collaboration, Fintech Solutions
+FlyLab Solutions Pvt Ltd | Full-Stack Developer
+May 2023 – May 2024 | Nashik, Maharashtra, India
+• Developed cross-platform mobile applications using Flutter, integrating ReactJS for responsive UIs. •
+Worked closely with designers and project managers to bring innovative app features to market. • Key
+Skills: Flutter, ReactJS, Mobile App Development, Full-stack Engineering
+Projects
+AI-Powered Chatbot
+• Developed an AI-powered chatbot for customer support, reducing query resolution time by 50% and
+decreasing support ticket volume by 30%. • Improved customer satisfaction by 15% through enhanced
+interaction efficiency and personalized responses.
+YouTube Automation System
+• Built an automated YouTube management system that published 50+ videos across 10 channels,
+leading to a 100% increase in views and a 50% growth in subscribers.
+Cinema Plus App
+• Developed the Cinema Plus app, achieving over 50,000 downloads in the first 6 months and a 4.5-star
+rating on the Play Store. • Enhanced user engagement by 40%, with daily active users increasing by
+30%.
+AI-Based Sentiment Analysis Tool
+• Developed a sentiment analysis tool leveraging NLP (Natural Language Processing) to analyze social
+media posts. • Achieved 85% accuracy in sentiment classification and used insights to influence
+marketing strategies for clients, increasing customer acquisition by 30%.
+Skills
+• Programming Languages: Python, Java, Dart, JavaScript (ReactJS) • Frameworks & Libraries:
+TensorFlow, PyTorch, Scikit-learn, Keras, Flutter, Node.js, ReactJS • Technologies: AI Automation,
+Machine Learning, Natural Language Processing (NLP), Deep Learning, Reinforcement Learning,
+Computer Vision, Cloud Computing • Tools: Docker, Kubernetes, Git, AWS, GCP, Azure • Project
+Management: Agile, Scrum, Team Leadership, Stakeholder Engagement, Product Development •
+Other: Data Visualization, API Development, Cross-platform Development, Data Analysis
+Certifications
+• Google Analytics Certification • Campaign Manager 360 Certification • Introduction to Generative AI
+(Coursera) • Machine Learning Specialization (Coursera) • AI For Everyone (Coursera)
+Education
+Bachelor of Engineering - Computer Engineering, Sandip Institute of Technology & Research Centre |
+May 2021 – July 2024
